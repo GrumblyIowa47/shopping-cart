@@ -29,6 +29,6 @@ A shopping cart application built with React and Vite. It allows users to browse
 ```
 
 # Image of the Shopping Cart:
-![image](https://github.com/user-attachments/assets/c1164fbd-77db-45c7-ab0a-5405be34a265)
+![image](https://github.com/GrumblyIowa47/shopping-cart/blob/main/src/assets/Screenshot%20(946).png)
 
 "# shopping-cart" 
