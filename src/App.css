@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body {
+  font-family: 'Bangers', sans-serif;
+}
+
+:root {
+  --font-custom: 'Bangers', sans-serif;
+  --bg-gradient-start: #f7fafc;
+  --bg-gradient-end: #e2e8f0;
+  --text-color: #333;
+  --border-color: #ccc;
+}
+
+.font-custom {
+  font-family: var(--font-custom);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background: linear-gradient(135deg, #f7fafc, #e2e8f0); /* Gradient for card background */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease; /* Smooth transition for background */
+}
+
+.card:hover {
+  background: linear-gradient(135deg, #e2e8f0, #cbd5e0); /* Lighter gradient effect on hover */
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+input::placeholder {
+  color: #a0aec0;
+  opacity: 1;
+}
+
+input {
+  color: var(--text-color);
+  border: 2px solid var(--border-color);
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+input:focus {
+  border-color: #4c51bf; /* Purple border on focus */
+  box-shadow: 0 0 8px rgba(76, 81, 191, 0.5); /* Subtle glow effect */
+  outline: none;
+}
+
+input:hover {
+  border-color: #2b6cb0; /* Blue border on hover */
+}
